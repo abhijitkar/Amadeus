@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "Your OpenAI key"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "Your Telegram Key"
+    tgkey = "6197392459:AAEP_KMZNzDgV8FsDJoMQ1y2XPYKsvdP-s0"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -34,9 +34,9 @@ user = ""
 running = False
 cache = None
 qcache = None
-chat_log = None
-botname = 'Makise Kurisu'
-username = 'Your name here'
+chat_log = '-1001676820327'
+botname = '𝙇𝙚𝙤𝙣𝙚 𝘿𝙞𝙙𝙞 { 🇮🇳 }'
+username = ' leonedidi_chatbot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -63,11 +63,11 @@ def start(bot, update):
     global username
     left = str(tim)
     if tim == 1:
-        chat_log = None
+        chat_log = '-1001676820327'
         cache = None
         qcache = None
-        botname = 'Makise Kurisu'
-        username = 'thewickedkarma'
+        botname = '𝙇𝙚𝙤𝙣𝙚 𝘿𝙞𝙙𝙞 { 🇮🇳 }'
+        username = ' leonedidi_chatbot'
         update.message.reply_text('Hi')
         return 
     else:
